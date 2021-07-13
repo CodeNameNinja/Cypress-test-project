@@ -1,7 +1,7 @@
 describe('working with inputs', () => {
   it('should get login form', () => {
     cy.visit('http://zero.webappsecurity.com/login.html', {timeout:30000});    
-    cy.get('h3').contains('Log in to ZeroBank')
+    cy.title().should('include', 'Zero - Log in')
   });
   it('should fill username', () => {
     cy.get('#user_login').as('username');
