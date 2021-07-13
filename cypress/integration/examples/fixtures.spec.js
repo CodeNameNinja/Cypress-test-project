@@ -4,6 +4,7 @@ describe('Login with Fixture Data',()=>{
     cy.fixture('user').then(({username,password}) => {
       cy.get('#user_login').type(username)
       cy.get('#user_password').type(password)
+      cy.contains('Sign in').click();
     })
   })
 })
