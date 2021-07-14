@@ -16,7 +16,7 @@ describe('Abstraction with Classes', () => {
   afterEach(() => {
     cy.log('Task completed')
   })
-  it.skip('1st IT', () => {   
+  it('1st IT', () => {   
     HomePage.scrollToTop();
     HomePage.scrollToBottom();  
   });    
